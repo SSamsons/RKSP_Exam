@@ -23,6 +23,8 @@ spring:
     open-in-view: false
 
 clickhouse:
+  # Для JDBC драйвера версии 0.6.0 можно использовать HTTP (8123) или нативный протокол (9000)
+  # Если не работает с 8123, попробуйте: jdbc:clickhouse://localhost:9000/default
   url: jdbc:clickhouse://localhost:8123/default
   username: default
   password:
